@@ -6,6 +6,13 @@ install:
 	pip install --upgrade pip && \
 		pip install -r requirements.txt
 
+
+# Usage: `make install-azure`
+# Installs required dependencies for Azure, useful for different Python versions
+install-azure:
+	pip install --upgrade pip && \
+		pip install -r requirements-azure.txt
+
 # Usage: `make format`
 # Formats Python code
 format:
